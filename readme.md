@@ -25,7 +25,7 @@ cookieにyuki=Trueを設定すると認証されます。
 <br>
 ## デプロイ
 (slim-2-by-siawaseok.gitがデプロイされます)<br>
-<a href="https://render.com/deploy?repo=https://github.com/siawaseok3/slim-2-by-siawaseok.git">
+<a href="https://render.com/deploy?repo=https://github.com/Tenakskd/slim-2-by-siawaseok">
  <img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render"><br>
 </a>
 <a href="https://vercel.com/new/clone?repository-url=https://github.com/siawaseok3/slim-2-by-siawaseok.git">
@@ -43,7 +43,7 @@ cookieにyuki=Trueを設定すると認証されます。
 
 次に偽造ページに使いたいhtmlを作ってください
 
-偽造ページを変更するには、以下のファイルを編集します:[blog/index.html](https://github.com/siawaseok3/slim-2-by-siawaseok/blob/main/blog/index.html)
+偽造ページを変更するには、以下のファイルを編集します:[blog/index.html](https://github.com/Tenakskd/slim-2-by-siawaseok/main/blog/index.html)
 
 
 作成した偽造ページのHTML内には、以下のコードが含まれている必要があります。これにより、サイトが正しく機能します。
