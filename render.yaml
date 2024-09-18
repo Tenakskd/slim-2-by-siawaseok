@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: calculator-free-usefull
+    name: ixl-usefull-calcu
     env: python
     region: Oregon
     plan: free
