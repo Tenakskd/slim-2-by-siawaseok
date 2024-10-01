@@ -1,3 +1,405 @@
+<html lang="ja"><head>
+    <meta charset="UTF-8">
+<title>Yahoo! JAPAN公式アプリケーション</title>
+<meta name="keywords" content="Yahoo! JAPAN,yahoo,ヤフー,公式アプリ,無料アプリ,天気,路線,ニュース,検索,フォロー,スポーツ,災害,防災,きせかえ">
+<meta name="description" content="Yahoo! JAPANアプリはあなたの毎日がより豊かになるようサポートします。ニュース、検索、天気など、スマートフォン＆タブレット向けのポータルアプリ。">
+<meta property="og:title" content="Yahoo! JAPAN公式アプリケーション">
+<meta property="og:description" content="Yahoo! JAPANアプリはあなたの毎日がより豊かになるようサポートします。ニュース、検索、天気など、スマートフォン＆タブレット向けのポータルアプリ。">
+<meta property="og:image" content="https://s.yimg.jp/images/yjtop-common/promomobile/yjapp/pc/1_0_9/image/OGP.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://promo-mobile.yahoo.co.jp/yjapp/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="Yahoo! JAPAN公式アプリケーション">
+<!--facebook-->
+<meta property="fb:app_id" content="532197183478445">
+<!--Twitter-->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://s.yimg.jp/images/yjtop-common/promomobile/yjapp/pc/1_0_9/image/OGP.png">
+<meta name="twitter:site" content="@Yahoo_JAPAN_PR">
+<meta name="twitter:title" content="Yahoo! JAPAN 公式アプリケーション">
+<meta name="twitter:description" content="Yahoo! JAPANアプリはあなたの毎日がより豊かになるようサポートします。ニュース、検索、天気など、スマートフォン＆タブレット向けのポータルアプリ。"><link rel="stylesheet" href="https://s.yimg.jp/images/yjtop-common/promomobile/yjapp/pc/1_0_12/css/style.css" media="all">
+    <script src="https://s.yimg.jp/images/ds/yas/tmual-4.0.0.min.js" async=""></script><script>
+    var TLDataContext = {
+      ual : {
+        pageview : {
+          opttype : 'pc',
+          content_id : '',
+          id_type : '',
+          nopv : 'false',
+          mtestid : '',
+          ss_join_id : '',
+          ss_join_id_type : ''
+        }
+      }
+    };
+    </script>
+    <script async="" src="https://s.yimg.jp/images/ds/managed/1/managed-ual.min.js?tk=4465a92c-f0fd-406f-b519-efd409cc9849&amp;service=toppage"></script>
+    <script src="https://s.yimg.jp/images/ds/cl/ds-custom-logger-2.0.0.min.js"></script>
+  </head>
+  <body>
+  <h1 class="Util-displayHiddenVisually">Yahoo! JAPAN アプリ</h1>
+  <div class="Wrapper">
+      <div id="emg">
+  <script defer="" src="https://s.yimg.jp/images/templa/mhdemg/v2/templa.min.js"></script>
+<script>
+    window.addEventListener('DOMContentLoaded', function () {
+        if (typeof YAHOO !== 'undefined' && typeof YAHOO.JP !== 'undefined' && typeof YAHOO.JP.templa.EMG !== 'undefined' && typeof YAHOO.JP.templa.EMG.load !== 'undefined') {
+            YAHOO.JP.templa.EMG.load({"device_id":"pc"});
+        }
+    }, false);
+</script>
+<div id="TEMPLA_EMG"></div>
+<div id="TEMPLA_EMG3_VDOM"><div id="TEMPLA_EMG3"><!-- EMG3 noResult --></div>
+<script>
+    YAHOO = window.YAHOO || {};
+    YAHOO.JP = YAHOO.JP || {};
+    YAHOO.JP.templa = YAHOO.JP.templa || {};
+    YAHOO.JP.templa.EMG = YAHOO.JP.templa.EMG || {};
+    YAHOO.JP.templa.EMG.refresh = function() {
+        var EMG1_LISTS = ["EMG", "MEM", "SEMG"];
+        var EMG2_LISTS = ["EMG2", "MEM2", "SEMG2"];
+        var EMG3_LISTS = ["EMG3", "MEM3", "SEMG3"];
+        var elmEmg1 = document.getElementById("TEMPLA_EMG1");
+        var elmEmg2 = document.getElementById("TEMPLA_EMG2");
+        var elmEmg3 = document.getElementById("TEMPLA_EMG3");
+        var emgXhr = new XMLHttpRequest();
+        emgXhr.open("GET", 'https://templa.yahooapis.jp/v1/templates/emg?device_id=pc&semg=false');
+        emgXhr.responseType = 'json';
+        emgXhr.timeout = 5000;
+        emgXhr.onload = function() {
+            if (emgXhr.status === 200) {
+                var emgJson = emgXhr.response;
+                // IE11の場合はレスポンスが文字列になるためJSONパースを行う
+                if (JSON && typeof emgJson === "string") {
+                    try {
+                        emgJson = JSON.parse(emgJson);
+                    } catch (e) {
+                        return;
+                    }
+                }
+                emgJson.results.forEach(function(obj) {
+                    if (EMG1_LISTS.indexOf(obj.position) > -1 && elmEmg1 !== null) { elmEmg1.innerHTML = obj.html;}
+                    if (EMG2_LISTS.indexOf(obj.position) > -1 && elmEmg2 !== null) { elmEmg2.innerHTML = obj.html;}
+                    if (EMG3_LISTS.indexOf(obj.position) > -1 && elmEmg3 !== null) { elmEmg3.innerHTML = obj.html;}
+                });
+            }
+        };
+        emgXhr.send();
+    }
+    window.addEventListener('DOMContentLoaded', function () {
+        YAHOO.JP.templa.EMG.refresh();
+    }, false);
+</script>
+</div><div id="TEMPLA_EMG2_VDOM"><div id="TEMPLA_EMG2"><!-- EMG2 noResult --></div>
+<script>
+    YAHOO = window.YAHOO || {};
+    YAHOO.JP = YAHOO.JP || {};
+    YAHOO.JP.templa = YAHOO.JP.templa || {};
+    YAHOO.JP.templa.EMG = YAHOO.JP.templa.EMG || {};
+    YAHOO.JP.templa.EMG.refresh = function() {
+        var EMG1_LISTS = ["EMG", "MEM", "SEMG"];
+        var EMG2_LISTS = ["EMG2", "MEM2", "SEMG2"];
+        var EMG3_LISTS = ["EMG3", "MEM3", "SEMG3"];
+        var elmEmg1 = document.getElementById("TEMPLA_EMG1");
+        var elmEmg2 = document.getElementById("TEMPLA_EMG2");
+        var elmEmg3 = document.getElementById("TEMPLA_EMG3");
+        var emgXhr = new XMLHttpRequest();
+        emgXhr.open("GET", 'https://templa.yahooapis.jp/v1/templates/emg?device_id=pc&semg=false');
+        emgXhr.responseType = 'json';
+        emgXhr.timeout = 5000;
+        emgXhr.onload = function() {
+            if (emgXhr.status === 200) {
+                var emgJson = emgXhr.response;
+                // IE11の場合はレスポンスが文字列になるためJSONパースを行う
+                if (JSON && typeof emgJson === "string") {
+                    try {
+                        emgJson = JSON.parse(emgJson);
+                    } catch (e) {
+                        return;
+                    }
+                }
+                emgJson.results.forEach(function(obj) {
+                    if (EMG1_LISTS.indexOf(obj.position) > -1 && elmEmg1 !== null) { elmEmg1.innerHTML = obj.html;}
+                    if (EMG2_LISTS.indexOf(obj.position) > -1 && elmEmg2 !== null) { elmEmg2.innerHTML = obj.html;}
+                    if (EMG3_LISTS.indexOf(obj.position) > -1 && elmEmg3 !== null) { elmEmg3.innerHTML = obj.html;}
+                });
+            }
+        };
+        emgXhr.send();
+    }
+    window.addEventListener('DOMContentLoaded', function () {
+        YAHOO.JP.templa.EMG.refresh();
+    }, false);
+</script>
+</div><div id="TEMPLA_EMG_VDOM"><div id="TEMPLA_EMG1"><!-- EMG noResult --></div>
+<script>
+    YAHOO = window.YAHOO || {};
+    YAHOO.JP = YAHOO.JP || {};
+    YAHOO.JP.templa = YAHOO.JP.templa || {};
+    YAHOO.JP.templa.EMG = YAHOO.JP.templa.EMG || {};
+    YAHOO.JP.templa.EMG.refresh = function() {
+        var EMG1_LISTS = ["EMG", "MEM", "SEMG"];
+        var EMG2_LISTS = ["EMG2", "MEM2", "SEMG2"];
+        var EMG3_LISTS = ["EMG3", "MEM3", "SEMG3"];
+        var elmEmg1 = document.getElementById("TEMPLA_EMG1");
+        var elmEmg2 = document.getElementById("TEMPLA_EMG2");
+        var elmEmg3 = document.getElementById("TEMPLA_EMG3");
+        var emgXhr = new XMLHttpRequest();
+        emgXhr.open("GET", 'https://templa.yahooapis.jp/v1/templates/emg?device_id=pc&semg=false');
+        emgXhr.responseType = 'json';
+        emgXhr.timeout = 5000;
+        emgXhr.onload = function() {
+            if (emgXhr.status === 200) {
+                var emgJson = emgXhr.response;
+                // IE11の場合はレスポンスが文字列になるためJSONパースを行う
+                if (JSON && typeof emgJson === "string") {
+                    try {
+                        emgJson = JSON.parse(emgJson);
+                    } catch (e) {
+                        return;
+                    }
+                }
+                emgJson.results.forEach(function(obj) {
+                    if (EMG1_LISTS.indexOf(obj.position) > -1 && elmEmg1 !== null) { elmEmg1.innerHTML = obj.html;}
+                    if (EMG2_LISTS.indexOf(obj.position) > -1 && elmEmg2 !== null) { elmEmg2.innerHTML = obj.html;}
+                    if (EMG3_LISTS.indexOf(obj.position) > -1 && elmEmg3 !== null) { elmEmg3.innerHTML = obj.html;}
+                });
+            }
+        };
+        emgXhr.send();
+    }
+    window.addEventListener('DOMContentLoaded', function () {
+        YAHOO.JP.templa.EMG.refresh();
+    }, false);
+</script>
+</div></div>
+      <div id="yjapp_promo" class="target_modules">
+        <section class="Introduction">
+  <div class="Introduction__content" data-topapppromointroduction-scaled="" style="transform: scale(1.002837);">
+    <header class="Introduction__header">
+      <div class="Introduction__headerBg Util-positionCenter"></div>
+      <div class="Introduction__decoration"></div>
+      <h2 class="Introduction__title">
+        <img src="https://s.yimg.jp/images/yjtop-common/promomobile/yjapp/pc/1_0_10/image/title.png" width="384" height="91">
+        <div class="Introduction__appIcon Icon Icon--appIcon" aria-hidden="true"></div>
+      </h2>
+    </header>
+    <ol class="Introduction__subText">
+      <li class="Introduction__subText--new">
+        <span class="Introduction__newIcon">
+          <img src="https://s.yimg.jp/images/yjtop-common/promomobile/yjapp/pc/1_0_10/image/new_01.svg" width="28" height="28">
+        </span>みんなの<span class="Introduction__subText--lightTextKey">話題</span>がわかる<span class="Introduction__subText--lightTextPrimary">「トレンド」</span>
+      </li>
+      <li class="Introduction__subText--new">
+        <span class="Introduction__newIcon">
+        <img src="https://s.yimg.jp/images/yjtop-common/promomobile/yjapp/pc/1_0_10/image/new_02.svg" width="28" height="28">
+        </span>あなたの<span class="Introduction__subText--lightTextKey">興味</span>にこたえる<span class="Introduction__subText--lightTextPrimary">「フォロー」</span>
+      </li>
+      <li class="Introduction__subText--new">
+        <span class="Introduction__newIcon">
+        <img src="https://s.yimg.jp/images/yjtop-common/promomobile/yjapp/pc/1_0_10/image/new_03.svg" width="28" height="28">
+        </span>あなたの<span class="Introduction__subText--lightTextKey">毎日</span>に役立つ<span class="Introduction__subText--lightTextPrimary">「アシスト」</span>
+      </li>
+    </ol>
+    <div class="Introduction__image">
+      <div class="Introduction__imageLeft Util-positionCenter">
+        <span class="Introduction__imageBg Icon Icon--mainBg" aria-hidden="true"></span>
+        <span class="Introduction__imagePeople Icon Icon--mainPeople" aria-hidden="true"></span>
+      </div>
+      <div class="Introduction__imageRight">
+        <img class="Introduction__imageDevice" src="https://s.yimg.jp/images/yjtop-common/promomobile/yjapp/pc/1_0_10/image/Devices/Introduction_0708.png" alt="アプリのイメージ" aria-hidden="true">
+        <p class="Introduction__annotation">※iOSとAndroidでリリースタイミングが異なります</p>
+      </div>
+    </div>
+    <footer class="Introduction__footer">
+      <h3 class="Util-displayHiddenVisually">Yahoo! JAPANアプリをダウンロード</h3>
+     <div class="Introduction__footer--content">
+      <ul class="Introduction__appList">
+        <li class="Introduction__appListItem">
+          <section class="Introduction__listButton">
+            <h4 class="Introduction__listButtonTitle">for iPhone/iPad</h4>
+            <a href="https://apps.apple.com/jp/app/yahoo-japan/id299147843" class="Introduction__buttonLink" data-cl-params="_cl_vmodule:yjapp_promo;_cl_link:u_appdl_i;_cl_position:0;" data-cl_cl_index="1">
+              <span class="Introduction__button--iOS Icon Icon--buttonIos">App Storeからダウンロード</span>
+            </a>
+          </section>
+          <span class="Introduction__listQr Icon Icon--qrIos">iOS版QRコード</span>
+        </li>
+        <li class="Introduction__appListItem">
+          <section class="Introduction__listButton">
+            <h4 class="Introduction__listButtonTitle">for Android</h4>
+            <a href="https://play.google.com/store/apps/details?id=jp.co.yahoo.android.yjtop&amp;hl=ja" class="Introduction__buttonLink" data-cl-params="_cl_vmodule:yjapp_promo;_cl_link:u_appdl_a;_cl_position:0;" data-cl_cl_index="2">
+              <span class="Introduction__button--android Icon Icon--buttonAndroid">Google Playで手に入れよう</span>
+            </a>
+          </section>
+          <span class="Introduction__listQr Icon Icon--qrAndroid">Android版QRコード</span>
+        </li>
+      </ul>
+      <a class="Introduction__blogLink" href="https://topblog.yahoo.co.jp/info/20240624a.html" data-cl-params="_cl_vmodule:yjapp_promo;_cl_link:replace;_cl_position:0;" data-cl_cl_index="3">
+        <img class="Introduction__blogLink--icon" src="https://s.yimg.jp/images/yjtop-common/promomobile/yjapp/pc/1_0_10/image/infoCircle.svg" width="18" height="18">
+        <span class="Introduction__blogLink--text">リニューアルに伴う<br>一部機能の移行について</span>
+      </a>
+      <ul class="Introduction__snsList">
+        <li class="Introduction__snsListItem IntroductionlistItem--sns">
+          <a href="https://www.facebook.com/share.php?u=https://promo-mobile.yahoo.co.jp/yjapp/index.html" class="Introduction__buttonSnsLink" target="new" data-cl-params="_cl_vmodule:yjapp_promo;_cl_link:share_fb;_cl_position:0;" data-cl_cl_index="4">
+            <span class="Introduction__buttonSns Icon Icon--snsFb">Facebookでシェア</span>
+          </a>
+        </li>
+        <li class="Introduction__snsListItem IntroductionlistItem--sns">
+          <a href="https://x.com/share?url=https://promo-mobile.yahoo.co.jp/yjapp/index.html&amp;text=Yahoo! JAPAN公式アプリケーション" class="Introduction__buttonSnsLink" target="new" data-cl-params="_cl_vmodule:yjapp_promo;_cl_link:share_x;_cl_position:0;" data-cl_cl_index="5">
+            <span class="Introduction__buttonSns Icon Icon--snsTw">Xでシェア</span>
+          </a>
+        </li>
+      </ul>
+     </div>
+    </footer>
+    <div class="Introduction__campaign">
+      <a href="https://topblog.yahoo.co.jp/info/20240708a.html" class="Introduction__campaign--button" data-cl-params="_cl_vmodule:yjapp_promo;_cl_link:camp;_cl_position:0;" data-cl_cl_index="6">
+        リニューアル記念キャンペーン実施中
+        <img class="Introduction__campaign--icon" src="https://s.yimg.jp/images/yjtop-common/promomobile/yjapp/pc/1_0_10/image/campaign_arrow.svg" width="35" height="35">
+      </a>
+    </div>
+  </div>
+</section>
+        <section class="Card Card--trend">
+  <div class="Card__content" data-topapppromo-scaled="" style="transform: scale(1.136842);">
+    <header class="Card__header">
+      <h2 class="Card__title">みんなの話題がわかる「トレンド」</h2>
+      <p class="Card__text">
+        Yahoo!検索の急上昇ワードをランキング化。概要や関連ニュースで「なぜ話題か」もわかります。</p>
+      <a href="https://topblog.yahoo.co.jp/info/20240708b.html" class="Card__button" data-cl-params="_cl_vmodule:yjapp_promo;_cl_link:trend;_cl_position:0;" data-cl_cl_index="7">
+        トレンドでできること
+        <span class="Card__button__icon"></span>
+      </a>
+    </header>
+    <img src="https://s.yimg.jp/images/yjtop-common/promomobile/yjapp/pc/1_0_10/image/Trend.png" width="918px" height="388px" alt="みんなの話題がわかる「トレンド」" aria-hidden="true">
+  </div>
+</section>
+        <section class="Card Card--follow">
+  <div class="Card__content" data-topapppromo-scaled="" style="transform: scale(1.136842);">
+    <header class="Card__header">
+      <h2 class="Card__title">あなたの興味にこたえる「フォロー」</h2>
+      <p class="Card__text">
+        スポーツや動物、エンタメや経済など、あなたが選んだテーマの最新情報をまとめて確認できます。</p>
+      <a href="https://topblog.yahoo.co.jp/info/20240624b.html" class="Card__button" data-cl-params="_cl_vmodule:yjapp_promo;_cl_link:follow;_cl_position:0;" data-cl_cl_index="8">
+        フォローでできること
+        <span class="Card__button__icon"></span>
+      </a>
+    </header>
+    <img src="https://s.yimg.jp/images/yjtop-common/promomobile/yjapp/pc/1_0_10/image/Follow.png" width="918px" height="388px" alt="あなたの興味にこたえる「フォロー」" aria-hidden="true">
+  </div>
+</section>
+ 
+        <section class="Card Card--assist">
+  <div class="Card__content" data-topapppromo-scaled="" style="transform: scale(1.136842);">
+    <header class="Card__header">
+      <h2 class="Card__title">あなたの毎日に役立つ「アシスト」</h2>
+      <p class="Card__text">
+        今日の天気、予定、電車の発車タイマーなど、あなたの1日に役立つ情報を手軽に確認できます。</p>
+      <a href="https://topblog.yahoo.co.jp/info/20240624c.html" class="Card__button" data-cl-params="_cl_vmodule:yjapp_promo;_cl_link:assist;_cl_position:0;" data-cl_cl_index="9">
+        アシストでできること
+        <span class="Card__button__icon"></span>
+      </a>
+    </header>
+    <img src="https://s.yimg.jp/images/yjtop-common/promomobile/yjapp/pc/1_0_10/image/Assist.png" width="918px" height="388px" alt="あなたの毎日に役立つ「アシスト」" aria-hidden="true">
+  </div>
+</section>
+ 
+        <section class="Card Card--lifeline">
+  <div class="Card__content" data-topapppromo-scaled="" style="transform: scale(1.136842);">
+    <header class="Card__header">
+      <h2 class="Card__title">天気や路線をサクッと確認</h2>
+      <p class="Card__text">忙しい外出前の必要情報はこれひとつで。スマートなお出かけをサポートします。</p>
+    </header>
+    <img src="https://s.yimg.jp/images/yjtop-common/promomobile/yjapp/pc/1_0_9/image/Lifeline.png" width="918px" height="388px" alt="天気や路線をサクッと確認" aria-hidden="true">
+  </div>
+</section>
+ 
+        <section class="Card Card--news">
+  <div class="Card__content" data-topapppromo-scaled="" style="transform: scale(1.136842);">
+    <header class="Card__header">
+      <h2 class="Card__title">最新のニュースをチェック</h2>
+      <p class="Card__text">最新情報を素早くお届け。気になるワードはその場で検索、深掘りできます。</p>
+    </header>
+    <img src="https://s.yimg.jp/images/yjtop-common/promomobile/yjapp/pc/1_0_9/image/News.png" width="918px" height="388px" alt="最新のニュースをチェック" aria-hidden="true">
+  </div>
+</section>
+ 
+        <section class="Card Card--emergency">
+  <div class="Card__content" data-topapppromo-scaled="" style="transform: scale(1.136842);">
+    <header class="Card__header">
+      <h2 class="Card__title">現在地の災害情報を受け取ろう</h2>
+      <p class="Card__text">地震・大雨などの災害・防災情報をPUSHで通知。外出先でもその場の情報を知ることができます。</p>
+    </header>
+    <img src="https://s.yimg.jp/images/yjtop-common/promomobile/yjapp/pc/1_0_10/image/Emergency.png" width="918px" height="388px" alt="現在地の災害情報を受け取ろう" aria-hidden="true">
+  </div>
+</section>
+        <section class="Toapp">
+  <div class="Toapp__content" data-topapppromo-scaled="" style="transform: scale(1.136842);">
+    <header class="Toapp__header">
+      <p class="Toapp__appIcon Icon Icon--appIcon"></p>
+      <h2 class="Toapp__title">さっそく使ってみましょう!</h2>
+    </header>
+    <div class="Toapp__image">
+      <div class="Toapp__imageLeft">
+        <img class="Toapp__imageDevice" src="https://s.yimg.jp/images/yjtop-common/promomobile/yjapp/pc/1_0_10/image/Devices/ToApp.png" alt="アプリのイメージ" aria-hidden="true">
+      </div>
+      <div class="Toapp__imageRight">
+        <span class="Toapp__imagePeople Icon Icon--toappPeople" aria-hidden="true">ユーザイラスト</span>
+      </div>
+    </div>
+    <footer class="Toapp__footer">
+      <h3 class="Util-displayHiddenVisually">Yahoo! JAPANアプリをダウンロード</h3>
+      <ul class="Toapp__list">
+        <li class="Toapp__listItem">
+          <section class="Toapp__listButton">
+            <h4 class="Toapp__listButtonTitle">for iPhone/iPad</h4>
+            <a href="https://apps.apple.com/jp/app/yahoo-japan/id299147843" class="Toapp__buttonLink" data-cl-params="_cl_vmodule:yjapp_promo;_cl_link:l_appdl_i;_cl_position:0;" data-cl_cl_index="10">
+              <span class="Toapp__button Icon Icon--buttonIos">App Storeからダウンロード</span>
+            </a>
+          </section>
+          <span class="Toapp__listQr Icon Icon--qrIos">iOS版QRコード</span>
+        </li>
+        <li class="Toapp__listItem">
+          <section class="Toapp__listButton">
+            <h4 class="Toapp__listButtonTitle">for Android</h4>
+            <a href="https://play.google.com/store/apps/details?id=jp.co.yahoo.android.yjtop&amp;hl=ja" class="Toapp__buttonLink" data-cl-params="_cl_vmodule:yjapp_promo;_cl_link:l_appdl_a;_cl_position:0;" data-cl_cl_index="11">
+              <span class="Toapp__button Icon Icon--buttonAndroid">Google Playで手に入れよう</span>
+            </a>
+          </section>
+          <span class="Toapp__listQr Icon Icon--qrAndroid">Android版QRコード</span>
+        </li>
+      </ul>
+    </footer>
+  </div>
+</section>
+ 
+      </div>
+      <div id="footer" class="target_modules">
+        <footer class="Footer">
+  <p class="Footer__links"><a href="https://www.yahoo.co.jp/" class="Footer__link" data-cl-params="_cl_vmodule:footer;_cl_link:ytop;_cl_position:0;" data-cl_cl_index="1">Yahoo! JAPAN</a>
+    <br><a href="https://www.lycorp.co.jp/ja/company/privacypolicy/" class="Footer__link" data-cl-params="_cl_vmodule:footer;_cl_link:policy;_cl_position:0;" data-cl_cl_index="2">プライバシーポリシー</a> - <a href="https://privacy.lycorp.co.jp/ja/" class="Footer__link" data-cl-params="_cl_vmodule:footer;_cl_link:center;_cl_position:0;" data-cl_cl_index="3">プライバシーセンター</a> - <a href="https://www.lycorp.co.jp/ja/company/terms/" class="Footer__link" data-cl-params="_cl_vmodule:footer;_cl_link:ag;_cl_position:0;" data-cl_cl_index="4">利用規約</a></p>
+ 
+  <ul class="Footer__annotation">
+    <li class="Footer__annotationItem">動作環境 Android 8.0以上、iOS 16以上、iPad OS 16以上 ※一部の機種では正常に動作しない場合があります。</li>
+    <li class="Footer__annotationItem">「App Store」ボタンを押すとiTunes （外部サイト）が起動します。</li>
+    <li class="Footer__annotationItem">アプリケーションはiPhone、iPod touch、iPadまたはAndroidでご利用いただけます。</li>
+    <li class="Footer__annotationItem">Apple、Appleのロゴ、App Store、iPodのロゴ、iTunesは、米国および他国のApple Inc.の登録商標です。</li>
+    <li class="Footer__annotationItem">iPhone、iPod touch、iPadはApple Inc.の商標です。</li>
+    <li class="Footer__annotationItem">iPhone商標は、アイホン株式会社のライセンスに基づき使用されています。</li>
+    <li class="Footer__annotationItem">Copyright (C) 2024 Apple Inc. All rights reserved.</li>
+    <li class="Footer__annotationItem">Android、Androidロゴ、Google Play、Google Playロゴは、Google LLC の商標です。</li>
+    <li class="Footer__annotationItem">スマートフォンでバーコードを読み取るには、専用のアプリケーションが必要です。→<a href="https://support.yahoo-net.jp/PccYjcommon/s/article/H000006844" target="_blank" data-cl-params="_cl_vmodule:footer;_cl_link:barcode;_cl_position:0;" data-cl_cl_index="5">バーコードの読み取り方</a></li>
+    <li class="Footer__annotationItem">画像:アフロ</li>
+  </ul>
+ 
+  <address class="Footer__address">このページについてのご意見・ご感想を<a href="https://support.yahoo-net.jp/voc/s/ytop-sp" data-cl-params="_cl_vmodule:footer;_cl_link:opinion;_cl_position:0;" data-cl_cl_index="6">こちら</a>までお寄せください。<br>
+© LY Corporation  </address>
+</footer>
+<!--/.Footer-->
+      </div>
+  </div><!--/.Wrapper-->
+  <script src="https://s.yimg.jp/images/yjtop-common/promomobile/yjapp/pc/1_0_10/js/main.js"></script>
+  </body></html>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
